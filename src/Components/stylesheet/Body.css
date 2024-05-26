@@ -1,0 +1,28 @@
+#res-container{
+    
+    display: flex;
+    /* background-color: rgb(138, 213, 213); */
+    gap: 40px;
+    width: 100%;
+    flex-wrap: wrap;
+   
+    padding:40px 10%;
+}
+
+#btn{
+    padding:10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(249, 249, 249);
+    margin: 20px;
+}
+
+#sorting{
+    height: 70px;
+    display: flex;
+    align-items: baseline;
+    padding-left: 10%;
+    gap:20px;
+    /* background: #000; */
+
+}

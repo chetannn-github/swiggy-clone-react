@@ -1,0 +1,23 @@
+#search-bar{
+    /* height: 40px; */
+    width: fit-content;
+    /* background: #b35f5f;/ */
+    /* margin-left:30px ; */
+    /* margin-top: 20px; */
+}
+
+#search-input{
+    height:35px;
+    border-radius: 10px;
+    text-align: center;
+    border:none;
+    margin-right: 10px;
+}
+
+#search-btn{
+    padding: 10px;
+    border-radius: 10px;
+    color: #000000;
+    border: none;
+    background-color: antiquewhite;
+}
