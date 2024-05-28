@@ -1,4 +1,15 @@
+import { useDispatch } from "react-redux";
+import {addItems} from "../utils/redux-store/cartSlice";
+import "./stylesheet/Item.css"
+
 let ItemList =({item}) =>{
+    const dispatch = useDispatch();
+    const handleAddItem = (item) =>{
+        console.log(item);
+        dispatch(addItems(item));
+
+    }
+    
       
     return(
         <div id="item-container" >
@@ -10,7 +21,9 @@ let ItemList =({item}) =>{
             {/* {console.log(item.card.info.imageId)} */}
             <div className="image">
              {item.card.info.imageId ? <img src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/${item.card.info.imageId}`} alt="" />: <img src="https://cdn.vectorstock.com/i/500p/82/99/no-image-available-like-missing-picture-vector-43938299.jpg" alt="" /> }
-         </div>
+             <div id="add-to-cart-btn" onClick={()=>handleAddItem(item)}>ADD</div>
+            </div>
+
      </div>)
     }
 

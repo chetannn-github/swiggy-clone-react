@@ -2,9 +2,12 @@ import "./stylesheet/Header.css"
 import { LOGO_URL } from "../utils/constants";  // named import ka tarikaaa!!!!!!!
 import { Link } from "react-router-dom";
 import 'remixicon/fonts/remixicon.css';
+import { useSelector } from "react-redux";
 
 
 const Header = () =>{
+    const cartItems = useSelector((store)=>(store.cart.items));
+
     return (
         <div className="header">
             <div id="logo-container">
@@ -28,9 +31,9 @@ const Header = () =>{
                         <i class="ri-user-3-line"></i>
                         Sign In
                     </Link>
-                    <Link to="/about">
+                    <Link to="/cart">
                         <i class="ri-shopping-cart-line"></i>
-                        Cart
+                        Cart ({cartItems.length})
                     </Link>
             
             </div>

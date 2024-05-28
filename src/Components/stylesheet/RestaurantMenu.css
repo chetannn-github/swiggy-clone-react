@@ -132,39 +132,7 @@ p#delivery-msg {
     font-weight: 600;
 }
 
-#recommended #item-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.385);
-}
-
-#recommended #item-container .image img{
-    height: 100px;
-    width: 100px;
-    border-radius: 10px;
-    overflow: hidden;
-    
-}
-#recommended .item{
-    
-    padding:25px  0px;
-    margin-top: 5px;
-    padding-bottom: 40px;
-    
-}
-
-#recommended .item h3{
-    font-weight: 400;
-    margin-bottom: 7px;
-    font-size: 15px;
-
-}
-#recommended .item h4{
-    font-weight: 300;
-    font-size: 13px;
-    margin-top: 5px;
-}
+ 
 
 
 i{
